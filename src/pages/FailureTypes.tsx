@@ -62,7 +62,7 @@ const FailureTypes = () => {
     <div className="space-y-6">
       <div>
         <h1 className="text-3xl font-bold mb-2">Failure Type Analysis</h1>
-        <p className="text-gray-600">
+        <p className="text-muted-foreground">
           Detailed breakdown and statistics of different failure types across all machines
         </p>
       </div>
@@ -88,12 +88,18 @@ const FailureTypes = () => {
                 bottom: 5,
               }}
             >
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="month" />
-              <YAxis />
-              <Tooltip />
+              <CartesianGrid strokeDasharray="3 3" stroke="var(--muted)" />
+              <XAxis dataKey="month" stroke="var(--muted-foreground)" />
+              <YAxis stroke="var(--muted-foreground)" />
+              <Tooltip 
+                contentStyle={{
+                  backgroundColor: 'var(--card)',
+                  border: '1px solid var(--border)',
+                  color: 'var(--card-foreground)'
+                }} 
+              />
               <Legend />
-              <Bar dataKey="TWF" name="Tool Wear Failure" fill="#0A2463" />
+              <Bar dataKey="TWF" name="Tool Wear Failure" fill="#4CB963" />
               <Bar dataKey="HDF" name="Heat Dissipation Failure" fill="#FFBE0B" />
               <Bar dataKey="PWF" name="Power Failure" fill="#FB3640" />
               <Bar dataKey="OSF" name="Overstrain Failure" fill="#4CB963" />
