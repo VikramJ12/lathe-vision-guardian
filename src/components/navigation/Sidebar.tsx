@@ -33,7 +33,7 @@ const navItems = [
 
 const Sidebar = () => {
   return (
-    <div className="bg-industrial-gray text-white w-64 min-h-screen flex flex-col py-6 px-4">
+    <div className="bg-sidebar w-64 min-h-screen flex flex-col py-6 px-4">
       <div className="mb-8">
         <div className="flex items-center justify-center mb-2">
           <Factory className="w-6 h-6 mr-2 text-industrial-orange" />
@@ -51,8 +51,8 @@ const Sidebar = () => {
                 className={({ isActive }) =>
                   `flex items-center gap-3 px-4 py-3 rounded-md transition-colors ${
                     isActive 
-                      ? "bg-industrial-green/20 text-industrial-green font-medium" 
-                      : "text-gray-300 hover:bg-white/5"
+                      ? "bg-sidebar-primary/20 text-sidebar-primary font-medium" 
+                      : "text-sidebar-foreground hover:bg-sidebar-accent/50"
                   }`
                 }
               >
@@ -64,8 +64,8 @@ const Sidebar = () => {
         </ul>
       </nav>
       
-      <div className="mt-auto pt-4 border-t border-white/10">
-        <div className="text-xs text-gray-300 text-center">
+      <div className="mt-auto pt-4 border-t border-sidebar-border">
+        <div className="text-xs text-sidebar-foreground text-center">
           <p>© 2025 Seertech</p>
           <p className="opacity-70">Version 1.0.0</p>
         </div>

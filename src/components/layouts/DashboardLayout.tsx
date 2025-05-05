@@ -32,7 +32,7 @@ const DashboardLayout = () => {
           <Button
             variant="outline"
             size="icon"
-            className="rounded-full"
+            className="rounded-full text-foreground border-sidebar-border"
             onClick={toggleDarkMode}
             title={isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
           >
