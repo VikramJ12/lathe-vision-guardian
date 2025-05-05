@@ -57,7 +57,15 @@ const MachinePerformance = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
         {machinesData.map((machine) => (
-          <MachineStatus key={machine.id} {...machine} />
+          <MachineStatus 
+            key={machine.id}
+            machineId={machine.id}  // Changed from id to machineId to match the prop requirement
+            name={machine.name}
+            healthScore={machine.healthScore}
+            uptime={machine.uptime}
+            efficiency={machine.efficiency}
+            status={machine.status}
+          />
         ))}
       </div>
 
