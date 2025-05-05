@@ -4,7 +4,7 @@ import {
   ChartBar,
   CircleAlert,
   ThermometerIcon,
-  FileChartBar,
+  FileChartLine,
 } from "lucide-react";
 
 const navItems = [
@@ -26,7 +26,7 @@ const navItems = [
   {
     title: "Product Analysis",
     path: "/product-analysis",
-    icon: <FileChartBar className="w-5 h-5" />,
+    icon: <FileChartLine className="w-5 h-5" />,
   },
 ];
 

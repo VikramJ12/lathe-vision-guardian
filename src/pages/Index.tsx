@@ -10,13 +10,7 @@ const Index = () => {
     navigate("/performance");
   }, [navigate]);
 
-  return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="text-center">
-        <h1 className="text-2xl">Redirecting to Dashboard...</h1>
-      </div>
-    </div>
-  );
+  return null;
 };
 
 export default Index;
