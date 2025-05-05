@@ -64,12 +64,11 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				industrial: {
-					blue: '#0A2463', // Kept for backward compatibility
+					blue: '#0A2463',
 					gray: '#141414',
 					green: '#4CB963',
 					yellow: '#FFBE0B',
 					red: '#FB3640',
-					orange: '#FEC6A1',
 				},
 			},
 			borderRadius: {

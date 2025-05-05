@@ -55,7 +55,7 @@ const MachineStatus = ({
           <div className="w-32 h-32 mx-auto">
             <div className="relative h-full w-full">
               <img
-                src="/lovable-uploads/9e438e25-460e-48f3-9859-473651d208a2.png"
+                src="/machines/lathe-icon.png"
                 alt={`Lathe Machine ${name}`}
                 className="w-full h-full object-contain"
                 onError={(e) => {
@@ -84,7 +84,7 @@ const MachineStatus = ({
               <span className="text-sm font-medium">Uptime</span>
               <span className="text-sm font-medium">{uptime}%</span>
             </div>
-            <Progress value={uptime} className="bg-industrial-orange" />
+            <Progress value={uptime} className="bg-industrial-blue" />
           </div>
           
           <div>
@@ -92,7 +92,7 @@ const MachineStatus = ({
               <span className="text-sm font-medium">Production Efficiency</span>
               <span className="text-sm font-medium">{efficiency}%</span>
             </div>
-            <Progress value={efficiency} className="bg-industrial-yellow" />
+            <Progress value={efficiency} className="bg-industrial-blue" />
           </div>
         </div>
       </CardContent>
