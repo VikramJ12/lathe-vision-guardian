@@ -55,7 +55,7 @@ const MachineStatus = ({
           <div className="w-32 h-32 mx-auto">
             <div className="relative h-full w-full">
               <img
-                src={`/machines/lathe-${machineId}.svg`}
+                src="/machines/lathe-icon.png"
                 alt={`Lathe Machine ${name}`}
                 className="w-full h-full object-contain"
                 onError={(e) => {
