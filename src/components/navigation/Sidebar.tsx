@@ -33,10 +33,10 @@ const navItems = [
 
 const Sidebar = () => {
   return (
-    <div className="bg-industrial-blue text-white w-64 min-h-screen flex flex-col py-6 px-4">
+    <div className="bg-industrial-gray text-white w-64 min-h-screen flex flex-col py-6 px-4">
       <div className="mb-8">
         <div className="flex items-center justify-center mb-2">
-          <Factory className="w-6 h-6 mr-2" />
+          <Factory className="w-6 h-6 mr-2 text-industrial-orange" />
           <h1 className="text-xl font-bold text-center">Seertech</h1>
         </div>
         <p className="text-xs text-center opacity-70">Predictive Maintenance Dashboard</p>
@@ -51,7 +51,7 @@ const Sidebar = () => {
                 className={({ isActive }) =>
                   `flex items-center gap-3 px-4 py-3 rounded-md transition-colors ${
                     isActive 
-                      ? "bg-white/10 text-white font-medium" 
+                      ? "bg-industrial-green/20 text-industrial-green font-medium" 
                       : "text-gray-300 hover:bg-white/5"
                   }`
                 }
