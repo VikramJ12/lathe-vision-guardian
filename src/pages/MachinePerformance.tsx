@@ -59,7 +59,7 @@ const MachinePerformance = () => {
         {machinesData.map((machine) => (
           <MachineStatus 
             key={machine.id}
-            machineId={machine.id}  
+            machineId={machine.id}  // Changed from id to machineId to match the prop requirement
             name={machine.name}
             healthScore={machine.healthScore}
             uptime={machine.uptime}
